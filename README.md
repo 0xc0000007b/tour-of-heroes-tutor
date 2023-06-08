@@ -5,7 +5,7 @@
 1. Route Animations
 2. Animations
 3. Smart components
-
+4. Signals
 ### Backend for these project: [click](https://github.com/0xc0000007b/tour-of-heroes-back.git)
 
 

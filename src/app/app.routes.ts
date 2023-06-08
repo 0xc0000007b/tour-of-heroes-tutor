@@ -8,6 +8,7 @@ export const routes: Routes = [
       import('./components/heroes/dashboard/dashboard.component').then(
         (c) => c.DashboardComponent
       ),
+    data: { animation: 'isLeft' },
   },
   {
     path: 'edit/:id',
@@ -15,6 +16,7 @@ export const routes: Routes = [
       import('./components/heroes/hero-editor/hero-editor.component').then(
         (c) => c.HeroEditorComponent
       ),
+    data: { animation: 'isRight' },
   },
   {
     path: 'create-hero',
@@ -22,5 +24,6 @@ export const routes: Routes = [
       import('./components/heroes/hero-creator/hero-creator.component').then(
         (c) => c.HeroCreatorComponent
       ),
+    data: { animation: 'isRight' },
   },
 ];

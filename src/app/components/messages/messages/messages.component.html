@@ -1,5 +1,6 @@
 <button (click)="open(template)" class="messages">messages</button>
 <ng-template #template>
+  <button class="close" (click)="close()">X</button>
   <p *ngFor="let msg of messages$ | async">
     {{ msg }}
   </p>

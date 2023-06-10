@@ -27,4 +27,7 @@ export class WindowService {
     componentRef.instance.content = options.content;
     componentRef.instance.isAnimated = options.isAnimated;
   }
+  close() {
+    this.viewContainerRef.clear();
+  }
 }

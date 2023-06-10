@@ -30,4 +30,7 @@ export class MessagesComponent {
       content: template,
     });
   }
+  close(): void {
+    this.windowService.close();
+  }
 }

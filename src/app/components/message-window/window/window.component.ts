@@ -6,21 +6,14 @@ import {
   TemplateRef,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {
-  animate,
-  state,
-  style,
-  transition,
-  trigger,
-} from '@angular/animations';
-import { CdkDrag } from '@angular/cdk/drag-drop';
+
 import { ResizableDirective } from './directives/resizable.directive';
 import { DragNdropDirective } from './directives/drag-ndrop.directive';
 
 @Component({
   selector: 'app-window',
   standalone: true,
-  imports: [CommonModule, CdkDrag, ResizableDirective, DragNdropDirective],
+  imports: [CommonModule, ResizableDirective, DragNdropDirective],
   templateUrl: './window.component.html',
   styleUrls: ['./window.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

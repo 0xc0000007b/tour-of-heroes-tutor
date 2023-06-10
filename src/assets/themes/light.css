@@ -1,0 +1,28 @@
+body {
+  background: white;
+  color: black;
+}
+.header {
+  color: white;
+
+  background: #6200ed;
+}
+.theme-changer {
+  background: #6200ec;
+}
+.messages {
+  background: #6200ec;
+  color: white;
+}.theme-changer {
+  transition: .3s all;
+ }
+ .theme-changer {
+   transition: .3s all;
+ }
+.theme-changer:hover {
+  box-shadow: 0.3px 0.3px 0.4px inset white;
+}
+.window {
+  color: black;
+  background: #fdfdfd;
+}

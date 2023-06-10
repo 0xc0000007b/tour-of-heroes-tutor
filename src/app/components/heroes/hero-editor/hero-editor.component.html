@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="hero">
+    <div class="hero-header">
+      <div class="name">
+        <span
+          (click)="showForm = true"
+          tooltip
+          tooltipText="this is name of our hero
+"
+          >{{ hero().name }}</span
+        >
+      </div>
+    </div>
+    <div
+      class="super-power"
+      tooltip
+      tooltipText="this is a super power of our hero"
+    >
+      <p>superpower:</p>
+      <br />
+      <span (click)="showForm = true">{{ hero().superPower }}</span>
+    </div>
+    <div *ngIf="showForm" class="editor-form" [formGroup]="form">
+      <input type="text" [(ngModel)]="hero().name" formControlName="name" />
+      <input
+        type="text"
+        [(ngModel)]="hero().superPower"
+        formControlName="superPower"
+      />
+      <button (click)="saveHero()">save</button>
+    </div>
+  </div>
+</div>
+<app-messages></app-messages>

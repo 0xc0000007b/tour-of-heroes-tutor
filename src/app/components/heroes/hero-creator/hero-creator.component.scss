@@ -1,0 +1,49 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  input {
+    outline: none;
+    transition: 0.3s border-bottom-color ease-in-out;
+    transform-origin: center;
+    transform-style: preserve-3d;
+
+    border: none;
+    border-bottom: 2px solid white;
+    &:active {
+      width: 100%;
+      border-bottom-color: #3498db;
+      transform-origin: center;
+      transform-style: preserve-3d;
+    }
+    &:focus {
+      width: 100%;
+      transform-style: preserve-3d;
+      transform-origin: center;
+      border-bottom-color: #3498db;
+    }
+  }
+  .buttons {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    .save-btn {
+      transition: 0.2s all;
+      background: #2ecc71;
+      outline: none;
+      padding: 5px 10px;
+      color: white;
+      text-transform: uppercase;
+      border-radius: 10px;
+      border: none;
+      width: 100%;
+      &:hover {
+        box-shadow: 1px 1px 1px #000 inset;
+      }
+      &:active {
+        margin-top: 0.5px;
+      }
+    }
+  }
+}

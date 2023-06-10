@@ -1,0 +1,9 @@
+<main class="items">
+  <app-hero-card
+    *ngFor="let hero of heroes() | async"
+    [hero]="hero"
+    tooltip
+    tooltipText="this is our hero"
+  ></app-hero-card>
+</main>
+<app-messages></app-messages>

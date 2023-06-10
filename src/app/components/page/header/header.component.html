@@ -1,0 +1,35 @@
+<header>
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="logo">Heroes Tour</div>
+        <button
+          class="theme-changer"
+          (click)="theme === 'light' ? setTheme('dark') : setTheme('light')"
+        >
+          <app-icon *ngIf="theme === 'light'" name="dark"></app-icon
+          ><app-icon *ngIf="theme === 'dark'" name="light"></app-icon>
+        </button>
+
+        <app-search></app-search>
+        <div class="menu">
+          <ul>
+            <li>
+              <a
+                routerLink="/dashboard"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+                >Dashboard</a
+              >
+            </li>
+            <li>
+              <a routerLink="/create-hero" routerLinkActive="active"
+                >Create new</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

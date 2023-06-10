@@ -1,0 +1,48 @@
+header {
+  width: 100%;
+}
+.header {
+  box-shadow: 0.3px 0.3px 0.3px #000;
+  letter-spacing: normal;
+  width: 100%;
+  padding: 15px;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    .logo {
+      color: white;
+      margin-right: auto;
+      font-size: 16px;
+      font-family: Poppins, sans-serif;
+      height: 20px;
+    }
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      font-family: Poppins, sans-serif;
+      list-style: none;
+      ul {
+        display: flex;
+        column-gap: 40px;
+        li {
+          padding: 4px;
+        }
+        a {
+          color: white;
+          text-decoration: none;
+          height: 100%;
+          padding: 3px;
+        }
+        .active {
+          border: 1px solid #eee;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

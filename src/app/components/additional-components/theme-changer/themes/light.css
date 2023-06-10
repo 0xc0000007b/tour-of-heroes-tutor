@@ -1,0 +1,13 @@
+body {
+  background: white;
+  color: white;
+}
+.header {
+  background: #6200ed;
+}
+body.window {
+  width: auto;
+  height: auto;
+  color: black;
+  background: #bdc3c7;
+}

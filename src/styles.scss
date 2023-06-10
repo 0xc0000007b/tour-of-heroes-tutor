@@ -20,8 +20,6 @@ body {
 
   flex-direction: column;
   letter-spacing: -0.5px;
-
-  color: #171718;
 }
 
 .container {
@@ -29,12 +27,33 @@ body {
   padding: 0 15px;
   max-width: 1200px;
 }
-
+main {
+  height: 100%;
+}
 html,
 body {
   height: 100%;
 }
 body {
-  margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.theme-changer {
+  background: transparent;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  justify-content: center;
+  padding-top: 4px;
+  box-shadow: 0.7px 0.7px 0.5px black;
+  transition: all 0.3s;
+  &:active {
+    margin-top: 0.4px;
+  }
+  &:hover {
+  }
+
+  svg {
+    fill: white;
+  }
 }

@@ -1,0 +1,29 @@
+<input
+  tooltip
+  tooltipText="this is a search"
+  [(ngModel)]="searchQueryString"
+  [@search]="state"
+  (click)="setStyles()"
+/>
+
+<div class="container" *ngIf="state === 'clicked'">
+  <div class="search-results">
+    <ul>
+      <li
+        class="result"
+        *ngFor="let hero of heroes() | search: searchQueryString"
+        [routerLink]="['edit', hero.id]"
+        (click)="state = 'void'"
+      >
+        <a>
+          {{ hero.name }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div
+  class="backdrop"
+  (click)="state = 'void'"
+  *ngIf="state === 'clicked'"
+></div>

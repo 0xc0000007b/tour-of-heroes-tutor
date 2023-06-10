@@ -1,0 +1,25 @@
+body {
+  background: #121212;
+  color: white;
+}
+.header {
+  background: #202020;
+}
+.window {
+  color: white;
+  background: #202020;
+}
+.messages {
+  background: #202020;
+  color: white;
+
+}
+.theme-changer:hover {
+  box-shadow: 0.3px 0.3px 0.4px inset black;
+}
+input {
+  background: rgba(#fff, .4);
+  color: white;
+}
+
+

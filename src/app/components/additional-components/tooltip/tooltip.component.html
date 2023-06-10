@@ -1,0 +1,18 @@
+<p
+  [@createTooltip]="state"
+  class="tooltip"
+  [style.left]="positionFromLeft"
+  [style.top]="positionFromTop"
+  *ngIf="!content"
+>
+  {{ text }}
+</p>
+<p
+  [@createTooltip]="state"
+  class="tooltip"
+  [style.left]="positionFromLeft"
+  [style.top]="positionFromTop"
+  *ngIf="content"
+>
+  <ng-container *ngTemplateOutlet="content"></ng-container>
+</p>

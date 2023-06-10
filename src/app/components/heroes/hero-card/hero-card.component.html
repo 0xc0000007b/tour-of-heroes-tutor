@@ -1,0 +1,9 @@
+<div class="card">
+  <a class="card-link" routerLink="/edit/{{ hero.id }}">
+    <span class="id">{{ hero.id }}</span>
+    <span class="name">{{ hero.name }}</span>
+  </a>
+  <button class="delete" (click)="deleteHero(hero.id)">
+    <mat-icon aria-hidden="false">delete_forever</mat-icon>
+  </button>
+</div>

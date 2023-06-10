@@ -8,6 +8,13 @@
 4. Signals
 5. HttpClient
 6. RxJS
+
+## Features which i added
+1. Theme switching
+2. drag and drop
+3. modal windows
+4. full api context
+5. block resizing
 <details>
 <summary>
 srceens dark

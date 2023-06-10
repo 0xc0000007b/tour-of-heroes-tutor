@@ -12,23 +12,25 @@
 <summary>
 srceens dark
   
-![Текст с описанием картинки](src/assets/images/img_6.png)
-![Текст с описанием картинки](src/assets/images/img_3.png)
-![Текст с описанием картинки](src/assets/images/img.png)
-![Текст с описанием картинки](src/assets/images/img_1.png)
-![Текст с описанием картинки](src/assets/images/img_2.png)
 
 
 </summary>
+<img src="src/assets/images/img_6.png" alt="">
+<img src="src/assets/images/img_3.png" alt="">
+<img src="src/assets/images/img.png" alt="">
+<img src="src/assets/images/img_1.png" alt="">
+<img src="src/assets/images/img_2.png" alt="">
+
 </details>
 <details>
 <summary>screens light
 
-![Текст с описанием картинки](src/assets/images/img_7.png)
-![Текст с описанием картинки](src/assets/images/img_8.png)
-![Текст с описанием картинки](src/assets/images/img_9.png)
-![Текст с описанием картинки](src/assets/images/img_10.png)
 </summary>
+<img src="src/assets/images/img_7.png" alt="">
+<img src="src/assets/images/img_8.png" alt="">
+<img src="src/assets/images/img_9.png" alt="">
+<img src="src/assets/images/img_10.png" alt="">
+
 </details>
 
 

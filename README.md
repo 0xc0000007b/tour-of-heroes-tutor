@@ -11,10 +11,11 @@
 
 ## Features which i added
 1. Theme switching
-2. drag and drop
+2. drag and drop(for window)
 3. modal windows
 4. full api context
 5. block resizing
+6. drag and drop(full implementation)
 <details>
 <summary>
 srceens dark

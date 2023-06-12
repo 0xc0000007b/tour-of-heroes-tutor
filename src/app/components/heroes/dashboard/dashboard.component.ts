@@ -16,6 +16,7 @@ import { MessagesComponent } from '../../messages/messages/messages.component';
 import { TooltipDirective } from '../../additional-components/tooltip.directive';
 import { DragNdropDirective } from '../../message-window/window/directives/drag-ndrop.directive';
 import { ResizableDirective } from '../../message-window/window/directives/resizable.directive';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -27,6 +28,7 @@ import { ResizableDirective } from '../../message-window/window/directives/resiz
     TooltipDirective,
     DragNdropDirective,
     ResizableDirective,
+    RouterLink,
   ],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss'],

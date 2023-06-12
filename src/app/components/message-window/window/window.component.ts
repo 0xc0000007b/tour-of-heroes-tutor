@@ -19,6 +19,7 @@ import { DragNdropDirective } from './directives/drag-ndrop.directive';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class WindowComponent {
+  public windowId: number;
   public widthInPx: number;
   public heightInPx: number;
   public content: TemplateRef<any>;

@@ -21,6 +21,9 @@ input {
   background: #fafafa;
   color: black;
 }
+.box {
+  background: #202020;
+}
 input:focus {
   background: none;
   color: black;

@@ -2,12 +2,18 @@ import {
   Directive,
   ElementRef,
   inject,
+  Input,
   OnDestroy,
   OnInit,
+  Renderer2,
 } from '@angular/core';
+import { DragNDropService } from './drag-n-ndrop/drag-n-drop.service';
 import { fromEvent, Subscription, takeUntil } from 'rxjs';
 import { DOCUMENT } from '@angular/common';
-
+export interface DraggableOptions {
+  zones?: Array<string>;
+  data?: any;
+}
 @Directive({
   selector: '[dragNDrop]',
   standalone: true,

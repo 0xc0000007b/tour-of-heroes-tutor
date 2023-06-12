@@ -26,4 +26,11 @@ export const routes: Routes = [
       ),
     data: { animation: 'isRight' },
   },
+  {
+    path: 'drag',
+    loadComponent: () =>
+      import(
+        './components/additional-components/drag-drop-test/drag-drop-test.component'
+      ).then((c) => c.DragDropTestComponent),
+  },
 ];
